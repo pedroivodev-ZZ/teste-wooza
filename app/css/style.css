@@ -1,0 +1,17 @@
+body {
+    color:#4d4d4d;
+}
+
+.barra-titulo {
+    background-color:#c4d82d;
+}
+
+.content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-custom {
+    width: 18rem;
+    margin-bottom: 15px;
+}
