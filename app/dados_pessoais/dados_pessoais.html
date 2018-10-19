@@ -1,0 +1,28 @@
+<h2>Dados pessoais</h2>
+<div class="row">
+    <div class="col-md-5">
+        <hr />
+    </div>
+</div>
+<div class="row" ng-controller="DadosPessoaisController as dadosPessoaisCtrl">
+    <div class="col-md-5">
+        <text-field-form comp-id="txtNome" label="Nome" type="text"
+        placeholder="Informe seu nome" model="dadosPessoaisCtrl.dadosPessoais.nome">
+        </text-field-form>
+        <text-field-form comp-id="txtCpf" label="CPF" type="text"
+        placeholder="000.000.000-00" model="dadosPessoaisCtrl.dadosPessoais.cpf">
+        </text-field-form>
+        <text-field-form comp-id="txtDtNasc" label="Data de nascimento" type="text"
+        placeholder="dd/mm/aaaa" model="dadosPessoaisCtrl.dadosPessoais.dtNasc">
+        </text-field-form>
+        <text-field-form comp-id="txtEmail" label="E-mail" type="email"
+        placeholder="Informe seu e-mail" model="dadosPessoaisCtrl.dadosPessoais.email">
+        </text-field-form>
+        <text-field-form comp-id="txtTelefone" label="Telefone" type="text"
+        placeholder="Informe seu telefone" model="dadosPessoaisCtrl.dadosPessoais.telefone">
+        </text-field-form>
+
+        <button class="btn btn-primary" ng-click="dadosPessoaisCtrl.voltar()">Voltar</button>
+        <button class="btn btn-primary" ng-click="dadosPessoaisCtrl.finalizar()">Finalizar</button>
+    </div>
+</div>

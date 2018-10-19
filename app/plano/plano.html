@@ -1,0 +1,24 @@
+<h2>Plano</h2>
+<div class="row">
+    <div class="col-md-5">
+        <hr />
+    </div>
+</div>
+<div class="row" ng-controller="PlanoController as planoCtrl">
+    <div class="col-md-5">
+        <select-form comp-id="slPlataformas" label="Plataforma" value="sku" text="nome"
+        list="planoCtrl.plataformas" model="planoCtrl.plataforma"
+        change="planoCtrl.plataformaChange()"></select-form>
+        <select-form comp-id="slPlanos" label="Plano" value="sku" text="franquia" blockField="ativo"
+        list="planoCtrl.planos" model="planoCtrl.plano"
+        change="planoCtrl.planoChange()"></select-form>
+
+        <div ng-if="planoCtrl.planoSelecionado" class="card card-custom">
+            <div class="card-body">
+                <p class="card-text">{{planoCtrl.planoSelecionado.franquia + ' - R$' + planoCtrl.planoSelecionado.valor}}</p>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" ng-click="planoCtrl.continuar()">Continuar</button>
+    </div>
+</div>
