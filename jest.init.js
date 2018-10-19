@@ -1,0 +1,7 @@
+require('jest')
+require('angular')
+require('angular-ui-router')
+require('angular-mocks')
+require('./app/index')
+require('./app/services/plataforma/plataformaService')
+require('./app/services/plano/planoService')
